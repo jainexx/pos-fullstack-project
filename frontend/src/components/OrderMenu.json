@@ -1,0 +1,697 @@
+/////////////回傳資料範例///////////////
+{
+    "code": 200,
+    "message": "Success!",
+    "categoriesList": [
+        {"categoryId": 2, "category": "漢堡"},
+        {"categoryId": 3, "category": "吐司"},
+        {"categoryId": 4, "category": "蛋餅"},
+        {"categoryId": 5, "category": "沙拉"},
+        {"categoryId": 6, "category": "炒泡麵"},
+        {"categoryId": 7, "category": "炸物"},
+        {"categoryId": 8, "category": "飲料"},
+        {"categoryId": 9, "category": "套餐"}
+    ],
+    "menuItemList": [
+        {"categoryId": 2, "mealName": "歐姆蛋堡", "price": 55, "workstationId": 1, "available": 1, "picture": "base64"},
+        {"categoryId": 2, "mealName": "燻雞堡", "price": 65, "workstationId": 1, "available": 1, "picture": "base64"},
+        {"categoryId": 2, "mealName": "牛肉堡", "price": 75, "workstationId": 1, "available": 1, "picture": "base64"},
+        {"categoryId": 2, "mealName": "田園蔬菜堡", "price": 40, "workstationId": 1, "available": 1, "picture": "base64"},
+        {"categoryId": 2, "mealName": "豬肉堡", "price": 70, "workstationId": 1, "available": 1, "picture": "base64"},
+        {"categoryId": 3, "mealName": "培根蛋吐司", "price": 40, "workstationId": 2, "available": 1, "picture": "base64"},
+        {"categoryId": 3, "mealName": "火腿蛋吐司", "price": 40, "workstationId": 2, "available": 1, "picture": "base64"},
+        {"categoryId": 3, "mealName": "煎蛋吐司", "price": 30, "workstationId": 2, "available": 1, "picture": "base64"},
+        {"categoryId": 3, "mealName": "薯餅蛋吐司", "price": 45, "workstationId": 2, "available": 1, "picture": "base64"},
+        {"categoryId": 3, "mealName": "鮪魚蛋吐司", "price": 40, "workstationId": 2, "available": 1, "picture": "base64"},
+        {"categoryId": 4, "mealName": "九層塔蛋餅", "price": 45, "workstationId": 3, "available": 1, "picture": "base64"},
+        {"categoryId": 4, "mealName": "原味蛋餅", "price": 30, "workstationId": 3, "available": 1, "picture": "base64"},
+        {"categoryId": 4, "mealName": "火腿蛋餅", "price": 45, "workstationId": 3, "available": 1, "picture": "base64"},
+        {"categoryId": 4, "mealName": "蔬菜蛋餅", "price": 40, "workstationId": 3, "available": 1, "picture": "base64"},
+        {"categoryId": 4, "mealName": "起司蛋餅", "price": 40, "workstationId": 3, "available": 1, "picture": "base64"},
+        {"categoryId": 5, "mealName": "凱薩沙拉", "price": 70, "workstationId": 4, "available": 1, "picture": "base64"},
+        {"categoryId": 5, "mealName": "煙燻鮭魚沙拉", "price": 130, "workstationId": 4, "available": 1, "picture": "base64"},
+        {"categoryId": 5, "mealName": "鮮蝦沙拉", "price": 80, "workstationId": 4, "available": 1, "picture": "base64"},
+        {"categoryId": 6, "mealName": "原味炒泡麵", "price": 45, "workstationId": 5, "available": 1, "picture": "base64"},
+        {"categoryId": 6, "mealName": "泰式炒泡麵", "price": 50, "workstationId": 5, "available": 1, "picture": "base64"},
+        {"categoryId": 6, "mealName": "牛肉炒泡麵", "price": 60, "workstationId": 5, "available": 1, "picture": "base64"},
+        {"categoryId": 6, "mealName": "豬肉炒泡麵", "price": 55, "workstationId": 5, "available": 1, "picture": "base64"},
+        {"categoryId": 7, "mealName": "洋蔥圈", "price": 35, "workstationId": 6, "available": 1, "picture": "base64"},
+        {"categoryId": 7, "mealName": "薯條", "price": 40, "workstationId": 6, "available": 1, "picture": "base64"},
+        {"categoryId": 7, "mealName": "薯餅", "price": 30, "workstationId": 6, "available": 1, "picture": "base64"},
+        {"categoryId": 7, "mealName": "雞塊", "price": 40, "workstationId": 6, "available": 1, "picture": "base64"},
+        {"categoryId": 8, "mealName": "紅茶", "price": 25, "workstationId": 7, "available": 1, "picture": "base64"},
+        {"categoryId": 8, "mealName": "綠茶", "price": 25, "workstationId": 7, "available": 1, "picture": "base64"},
+        {"categoryId": 8, "mealName": "美式咖啡", "price": 50, "workstationId": 7, "available": 1, "picture": "base64"},
+        {"categoryId": 8, "mealName": "鮮奶紅茶", "price": 35, "workstationId": 7, "available": 1, "picture": "base64"},
+        {"categoryId": 8, "mealName": "鮮奶綠茶", "price": 35, "workstationId": 7, "available": 1, "picture": "base64"}
+    ],
+    "optionList": [
+        {
+            "categoryId": 2,
+            "optionTitle": "加料",
+            "optionType": "checkbox",
+            "optionItems": [
+                {"optionContent": "培根", "extraPrice": 20},
+                {"optionContent": "蔬菜", "extraPrice": 20},
+                {"optionContent": "雙層", "extraPrice": 40}
+            ]
+        },
+        {
+            "categoryId": 2,
+            "optionTitle": "加蛋",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "全熟蛋", "extraPrice": 15},
+                {"optionContent": "半熟蛋", "extraPrice": 15},
+                {"optionContent": "歐姆蛋", "extraPrice": 25}
+            ]
+        },
+        {
+            "categoryId": 3,
+            "optionTitle": "加蛋",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "全熟蛋", "extraPrice": 15},
+                {"optionContent": "半熟蛋", "extraPrice": 15},
+                {"optionContent": "歐姆蛋", "extraPrice": 25}
+            ]
+        },
+        {
+            "categoryId": 3,
+            "optionTitle": "加起司",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不炙燒", "extraPrice": 10},
+                {"optionContent": "炙燒", "extraPrice": 10}
+            ]
+        },
+        {
+            "categoryId": 4,
+            "optionTitle": "加料",
+            "optionType": "checkbox",
+            "optionItems": [
+                {"optionContent": "九層塔", "extraPrice": 10},
+                {"optionContent": "火腿", "extraPrice": 10},
+                {"optionContent": "起司", "extraPrice": 10}
+            ]
+        },
+        {
+            "categoryId": 4,
+            "optionTitle": "辣",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不辣", "extraPrice": 0},
+                {"optionContent": "加特製辣醬", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 5,
+            "optionTitle": "加料",
+            "optionType": "checkbox",
+            "optionItems": [
+                {"optionContent": "水煮蛋", "extraPrice": 10},
+                {"optionContent": "酪梨", "extraPrice": 20},
+                {"optionContent": "雞胸肉", "extraPrice": 30}
+            ]
+        },
+        {
+            "categoryId": 5,
+            "optionTitle": "醬料",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不醬", "extraPrice": 0},
+                {"optionContent": "低脂醬", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 6,
+            "optionTitle": "加料",
+            "optionType": "checkbox",
+            "optionItems": [
+                {"optionContent": "肉多多", "extraPrice": 20},
+                {"optionContent": "菜多多", "extraPrice": 15}
+            ]
+        },
+        {
+            "categoryId": 6,
+            "optionTitle": "加蛋",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "全熟蛋", "extraPrice": 15},
+                {"optionContent": "半熟蛋", "extraPrice": 15},
+                {"optionContent": "炒蛋", "extraPrice": 20}
+            ]
+        },
+        {
+            "categoryId": 6,
+            "optionTitle": "辣度",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不辣", "extraPrice": 0},
+                {"optionContent": "中辣", "extraPrice": 0},
+                {"optionContent": "大辣", "extraPrice": 0},
+                {"optionContent": "小辣", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 7,
+            "optionTitle": "胡椒",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不胡椒", "extraPrice": 0},
+                {"optionContent": "多胡椒", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 7,
+            "optionTitle": "醬料",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "不醬", "extraPrice": 0},
+                {"optionContent": "番茄醬", "extraPrice": 0},
+                {"optionContent": "糖醋醬", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 8,
+            "optionTitle": "冰塊",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "去冰", "extraPrice": 0},
+                {"optionContent": "少冰", "extraPrice": 0},
+                {"optionContent": "微冰", "extraPrice": 0},
+                {"optionContent": "正常冰", "extraPrice": 0}
+            ]
+        },
+        {
+            "categoryId": 8,
+            "optionTitle": "加料",
+            "optionType": "checkbox",
+            "optionItems": [
+                {"optionContent": "椰果", "extraPrice": 10},
+                {"optionContent": "珍珠", "extraPrice": 10},
+                {"optionContent": "粉粿", "extraPrice": 10}
+            ]
+        },
+        {
+            "categoryId": 8,
+            "optionTitle": "甜度",
+            "optionType": "radio",
+            "optionItems": [
+                {"optionContent": "半糖", "extraPrice": 0},
+                {"optionContent": "微糖", "extraPrice": 0},
+                {"optionContent": "正常甜", "extraPrice": 0},
+                {"optionContent": "無糖", "extraPrice": 0}
+            ]
+        }
+    ],
+    "comboList": [
+        {
+            "comboName": "一號餐",
+            "comboDetail": [
+                {"categoryId": 2, "workstationId": 2, "dishesList": [{"dishName": "歐姆蛋堡", "price": 55}]},
+                {"categoryId": 7, "workstationId": 7, "dishesList": [{"dishName": "薯條", "price": 40}, {"dishName": "雞塊", "price": 40}, {"dishName": "洋蔥圈", "price": 35}]},
+                {"categoryId": 8, "workstationId": 8, "dishesList": [{"dishName": "紅茶", "price": 25}, {"dishName": "綠茶", "price": 25}, {"dishName": "美式咖啡", "price": 50}]}
+            ],
+            "discountAmount": -20
+        },
+        {
+            "comboName": "二號餐",
+            "comboDetail": [
+                {"categoryId": 6, "workstationId": 6, "dishesList": [{"dishName": "泰式炒泡麵", "price": 50}]},
+                {"categoryId": 2, "workstationId": 2, "dishesList": [{"dishName": "豬肉堡", "price": 70}, {"dishName": "牛肉堡", "price": 75}]}
+            ],
+            "discountAmount": -25
+        },
+        {
+            "comboName": "三號餐",
+            "comboDetail": [
+                {"categoryId": 5, "workstationId": 5, "dishesList": [{"dishName": "鮮蝦沙拉", "price": 80}]},
+                {"categoryId": 4, "workstationId": 4, "dishesList": [{"dishName": "九層塔蛋餅", "price": 45}, {"dishName": "火腿蛋餅", "price": 45}, {"dishName": "蔬菜蛋餅", "price": 40}]}
+            ],
+            "discountAmount": -30
+        },
+        {
+            "comboName": "四號餐",
+            "comboDetail": [
+                {"categoryId": 5, "workstationId": 5, "dishesList": [{"dishName": "凱薩沙拉", "price": 70}]},
+                {"categoryId": 8, "workstationId": 8, "dishesList": [{"dishName": "紅茶", "price": 25}, {"dishName": "綠茶", "price": 25}, {"dishName": "鮮奶紅茶", "price": 35}, {"dishName": "鮮奶綠茶", "price": 35}]}
+            ],
+            "discountAmount": -15
+        },
+        {
+            "comboName": "五號餐",
+            "comboDetail": [
+                {"categoryId": 3, "workstationId": 3, "dishesList": [{"dishName": "原味蛋吐司", "price": 30}]},
+                {"categoryId": 7, "workstationId": 7, "dishesList": [{"dishName": "薯條", "price": 40}, {"dishName": "雞塊", "price": 40}]},
+                {"categoryId": 8, "workstationId": 8, "dishesList": [{"dishName": "紅茶", "price": 25}, {"dishName": "綠茶", "price": 25}, {"dishName": "美式咖啡", "price": 50}, {"dishName": "鮮奶紅茶", "price": 35}, {"dishName": "鮮奶綠茶", "price": 35}]}
+            ],
+            "discountAmount": -10
+        }
+    ],
+    "tableNumberList": ["A01", "A02", "A03", "A04", "A05"]
+}
+
+///////////主要Res架構/////////////
+OrderMenuRes {
+    private List<Categories> categoriesList; //使用 Categories entity
+	
+	private List<MenuItems> menuItemList;  //使用 MenuItems entity
+	
+	private List<OptionVo> optionList;
+
+    private List<ComboVo> comboList;
+    
+    private List<String> tableNumberList;
+}
+
+////////Res用到的vo/////////
+// OptionVo 
+OptionVo {
+    private int categoryId;
+
+	private String optionTitle;
+	
+	private String optionType;
+	
+	private List<OptionItemVo> optionItems;
+}
+
+OptionItemVo {
+    private String optionContent;
+	
+    private int extraPrice;
+}
+
+// ComboVo
+ComboVo {
+    private int categoryId;
+	
+    private String comboName;
+    
+    private List<ComboDetailVo> comboDetail;
+    
+    private int discountAmount;
+}
+
+ComboDetailVo {
+    private int categoryId;
+    
+    private int workstationId;
+    
+    private List<DishVo> dishesList;
+}
+
+DishVo {
+    private String dishName;
+	
+	private int price;
+}
+
+
+/// addOrder api request 格式
+每筆訂單以陣列儲存以下物件
+{
+    "id": 送出訂單後自動生成，前端不用填寫,
+    "orderId":202410091101A01(日期(20241009)+送出訂單時間(1101)＋桌號(A01)),
+    "orderMealId":UUID 用以組合套餐，同筆訂單的同個套餐名稱UUID相同，單點或其他套餐再給其他UUID(使用JS的UUID生成函數),
+    "comboName":套餐名稱(一號餐,二號餐)，單點設定為null,
+    "mealName":套餐中的單品名稱或單點餐點名稱,
+    "options":餐點客製化選項如(半糖,去冰),
+    "workstationId":餐點對應的工作臺id(mealName的workstationId),
+    "price":套餐折扣價 或 單點+客製化選項金額,
+    "mealStatus": "準備中"(固定),
+    "tableNumber":從tableNumberList撈出選項，送出訂單前會選好,
+    "orderTime":localDatetimen 送出訂單的日期時間,
+    "checkout" :0(固定),
+}
+
+// 舉例同筆訂單中有套餐和單點
+//1.套餐
+// 1.1 套餐總覽：price 為套餐折扣價（discountAmount）
+{
+    "ordersList": [
+        {
+            "id": ,
+            "orderId":"202410131101A01",
+            "orderMealId":"1b9d6a9b-53e1-4a22-9e74-1c00b6e09b79",
+            "comboName":"二號餐",
+            "mealName":null,
+            "options":null,
+            "workstationId":0,
+            "price":-25(discountAmount),
+            "mealStatus": "準備中"(固定),
+            "tableNumber":"A01",
+            "orderTime":2024-10-13 11:01:03,
+            "checkout" :0(固定),
+        },
+        // 1.2 套餐單品項
+        {
+            "id": ,
+            "orderId": "202410131101A01",
+            "orderMealId":"1b9d6a9b-53e1-4a22-9e74-1c00b6e09b79",
+            "comboName":"二號餐",
+            "mealName":"泰式炒泡麵",
+            "options":"加辣,加雞蛋",
+            "workstationId":6,
+            "price":85(泰式炒泡麵+加辣+加雞蛋合計金額),
+            "mealStatus": "準備中",
+            "tableNumber":"A01",
+            "orderTime":2024-10-13 11:01:03,
+            "checkout" :0,
+        },
+        {
+            "id": ,
+            "orderId":"202410131101A01",
+            "orderMealId":"1b9d6a9b-53e1-4a22-9e74-1c00b6e09b79",
+            "comboName":"二號餐",
+            "mealName":"牛肉堡",
+            "options":"多起司",
+            "workstationId":3,
+            "price":95(牛肉堡+多起司合計金額),
+            "mealStatus": "準備中",
+            "tableNumber":"A01",
+            "orderTime":2024-10-13 11:01:03,
+            "checkout" :0,
+        },
+        //單點
+        {
+            "id": ,
+            "orderId":"202410131101A01",
+            "orderMealId":"66f0b1e5-10c1-471f-8e11-c70b6e09b23a",
+            "comboName":null,
+            "mealName":"豬肉堡",
+            "options":"加雙份肉,加醬料",
+            "workstationId":3,
+            "price":105(豬肉堡+加雙份肉+加醬料合計金額),
+            "mealStatus": "準備中",
+            "tableNumber":"A01",
+            "orderTime":2024-10-13 11:01:03,
+            "checkout" :0,
+        },
+    ]
+}
+
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@NotBlank(message = "Id cannot be null or empty")
+@Column(name = "id")
+private Integer id;
+
+@Column(name = "order_id")
+private String orderId;
+
+@Column(name = "order_meal_id")
+private String orderMealId;
+
+@Column(name = "combo_name")
+private String comboName;
+
+@Column(name = "meal_name")
+private String mealName;
+
+@Column(name = "options")
+private String options;
+
+@Column(name = "workstation_id")
+private Integer workstationId;
+
+@Column(name = "price")
+private Integer price;
+
+@Column(name = "meal_status", columnDefinition = "ENUM('準備中', '待送餐點', '已送達')")
+private String mealStatus;
+
+@Column(name = "table_number")
+private String tableNumber;
+
+@Column(name = "order_time")
+private LocalDateTime orderTime;
+
+@Column(name = "checkout")
+private Boolean checkout = false;
+
+
+//////// CustomPopup
+// singleDishes
+{
+    "mealName": "培根蛋吐司",
+    "categoryId": 2,
+    "workstationId": 2,
+    "price": 40,
+    "available": true,
+}
+
+// singleOptions
+{
+    "加蛋"(單選：陣列要清空再放入): [
+    {
+        "content": "歐姆蛋",
+        "price": 25
+    }
+    ],
+    "吐司做法"(多選：有勾選的再加入):[
+        {
+            "content": "不美乃滋",
+            "price": 0
+        },
+        {
+            "content": "去邊",
+            "price": 0
+        },
+        
+    ],
+    "加起司(單選：陣列要清空再放入)":[
+        {
+            "content": "炙燒",
+            "price": 10
+        }
+    ]
+}
+
+// comboDishes
+{
+    "comboName":"一號餐",
+    "discountAmount": -20(應該是從this.item.discountAmount取得？),
+    "comboBasicPrice": this.item.comboPrice 取得,
+    "selectedDishes":
+    {
+        "mealName": "歐姆蛋堡",
+        "categoryId": 1,
+        "workstationId": 1(this.item.comboDetail.workstationId),
+        "price": 60,
+        "available": true,
+        "selectedOptions" :{
+            "加蛋"(單選：陣列要清空再放入): [
+                {
+                    "content": "歐姆蛋",
+                    "price": 25
+                }
+            ],
+            "加起司"(單選：陣列要清空再放入): [
+                {
+                    "content": "炙燒",
+                    "price": 10
+                }
+            ],
+            "加料"(多選：有勾選的再加入):[
+                {
+                    "content": "培根",
+                    "price": 20
+                },
+                {
+                    "content": "蔬菜",
+                    "price": 20
+                },
+        
+            ],
+        }
+    },
+    {
+        "mealName": "薯條",
+        "categoryId": 6,
+        "workstationId": 6,
+        "price": 40,
+        "available": true,
+        "selectedOptions" :{
+            "加蛋"(單選：陣列要清空再放入): [
+                {
+                    "content": "歐姆蛋",
+                    "price": 25
+                }
+            ],
+            "加起司"(單選：陣列要清空再放入): [
+                {
+                    "content": "炙燒",
+                    "price": 10
+                }
+            ],
+            "加料"(多選：有勾選的再加入):[
+                {
+                    "content": "培根",
+                    "price": 20
+                },
+                {
+                    "content": "蔬菜",
+                    "price": 20
+                },
+        
+            ],
+        }
+    },
+    {
+        "mealName": "綠茶",
+        "categoryId": 7,
+        "workstationId": 7,
+        "price": 40,
+        "available": true,
+        "selectedOptions" :{
+            "加蛋"(單選：陣列要清空再放入): [
+                {
+                    "content": "歐姆蛋",
+                    "price": 25
+                }
+            ],
+            "加起司"(單選：陣列要清空再放入): [
+                {
+                    "content": "炙燒",
+                    "price": 10
+                }
+            ],
+            "加料"(多選：有勾選的再加入):[
+                {
+                    "content": "培根",
+                    "price": 20
+                },
+                {
+                    "content": "蔬菜",
+                    "price": 20
+                },
+        
+            ],
+        }
+    },
+}
+
+
+
+//////////////CustomPopup傳出////////////
+//comboList
+
+"comboList": [
+    //order
+  {
+    "orderMealId": "486d3645-11ce-4868-8fa4-3c0e37ade061",
+    "comboName": "3號餐",
+    "mealName": null,
+    "options": null,
+    "workstationId": 0,
+    "price": -5,
+    "comboBasicPrice": 60,
+    "selectedComboPrice": 80
+  },
+  {
+    "orderMealId": "486d3645-11ce-4868-8fa4-3c0e37ade061",
+    "comboName": "3號餐",
+    "mealName": "蔬菜蛋餅",
+    "options": "起司",
+    "optionsPriceTotal": 10,
+    "workstationId": 3,
+    "price": 50,
+    "priceDifference": 0
+  },
+  {
+    "orderMealId": "486d3645-11ce-4868-8fa4-3c0e37ade061",
+    "comboName": "3號餐",
+    "mealName": "綠茶",
+    "options": "微糖, 椰果",
+    "optionsPriceTotal": 10,
+    "workstationId": 7,
+    "price": 35,
+    "priceDifference": 0
+  }
+]
+
+//newComboList
+[
+    //combo
+    {
+        "orderMealId": 
+        "comboName": 
+        "comboBasicPrice" 
+        "selectedComboPrice" 
+        "mealList": [ 
+            {
+                "mealName": 蔬菜蛋餅
+                "options": 起司
+                "optionsPriceTotal":10
+                "priceDifference": 0
+            },
+            {
+                "mealName":綠茶,
+                "options":"微糖, 椰果",
+                "optionsPriceTotal": 10,
+                "priceDifference": 0
+            }
+        ]
+        
+    }
+]
+
+// singleList 
+{
+    "orderMealId":"66f0b1e5-10c1-471f-8e11-c70b6e09b23a",
+    "comboName":null,
+    "mealName":"培根蛋吐司",
+    "mealPice":,
+    "options":"蔥花蛋,烤酥(singleOptions的所有content若有值就用逗號組合)",
+    "optionsPrice":,
+    "workstationId":3,
+    "price":105(豬肉培根蛋吐司price+蔥花蛋price+烤酥price 或直接取this.totalPrice?),
+},
+
+groupedComboDishes = [
+    {
+        categoryName: "漢堡",  // 分類名稱
+        categoryId: 1,        // 分類ID
+        dishes: [             // 該分類下的菜品列表
+            {
+                name: "豬肉堡",      // 菜品名稱
+                price: 50,             // 該菜品價格
+                categoryId: 1,         // 該菜品的分類ID
+                priceDifference: 0     // 與預設菜品的價差
+            },
+            {
+                name: "豬肉起司堡",
+                price: 70,
+                categoryId: 1,
+                priceDifference: 20
+            },
+        ]
+    },
+    {
+        categoryName: "漢堡",
+        categoryId: 1,
+        dishes: [
+            {
+                name: "牛肉堡",
+                price: 50,
+                categoryId: 2,
+                priceDifference: 0
+            },
+            {
+                name: "牛肉起司堡",
+                price: 70,
+                categoryId: 1,
+                priceDifference: 20
+            },
+        ]
+    }
+]
+假設groupedComboDishes的結構如上
+菜品分類相同時(都是categoryId: 1)
+依照目前程式碼
+只會預設勾選到“牛肉堡”
+且豬肉堡和牛肉堡的客製化選項也無法分開選擇
+請分析原因
